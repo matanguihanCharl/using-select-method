@@ -112,7 +112,7 @@
       </Assign.Value>
     </Assign>
     <ui:OutputDataTable DataTable="[dt_FilteredEmployees]" DisplayName="Output Filtered DT" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[outputDT]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[outputDT]" />
-    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_FilteredEmployees]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="[dt_FilteredEmployees(0)(3).toString]" WorkbookPath="Filtered Employee Data.xlsx" />
+    <ui:LogMessage DisplayName="Log Message OutputDT" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[outputDT]" />
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_FilteredEmployees]" DisplayName="Write to Excel Filtered Data" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="[dt_FilteredEmployees(0)(3).toString]" WorkbookPath="Filtered Employee Data.xlsx" />
   </Sequence>
 </Activity>
